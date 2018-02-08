@@ -6,7 +6,8 @@ const AddMessage = (props) => {
 
 	return (
 		<section id='new-message'>
-			<input
+			<h3>Type New Message</h3>
+			<span><input
 				onKeyPress={ (e)=> {
 					if(e.key === 'Enter') {
 						props.dispatch(input.value, 'Me')
@@ -14,7 +15,9 @@ const AddMessage = (props) => {
 					}
 				}} 
 				type="text"
+				placeholder="Press Enter to Send"
 				ref={ node => {input=node}} />
+			</span>
 		</section>
 		)
 }

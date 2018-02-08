@@ -1,5 +1,7 @@
 # Chat Room Application
 
+![Alt text](img/img.jpg?raw=true "Title")
+
 ## Technologies Used
 * React.JS - For Building User Interface
 * Redux.JS - For managing Application State

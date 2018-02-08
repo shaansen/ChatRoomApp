@@ -4,6 +4,8 @@ import Message from './Message'
 
 const MessageList = ({messages}) => (
 	<section id="messages-list">
+		<h1>Chat Room Conversations</h1>
+		<hr></hr>
 		<ul> 
 			{messages.map(message => (
 					<Message

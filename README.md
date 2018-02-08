@@ -1,6 +1,6 @@
 # Chat Room Application
 
-![Alt text](img/img.jpg?raw=true "Title")
+![img](https://user-images.githubusercontent.com/7847324/35991627-c3be57fa-0cd5-11e8-8bdf-4fc54ce5ab71.JPG)
 
 ## Technologies Used
 * React.JS - For Building User Interface

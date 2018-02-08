@@ -17,13 +17,13 @@ export const addUser = name => ({
 })
 
 export const messageReceived = (message, author) => ({
-	type: types.MESSAGE_RECEIVED,
+	type : types.MESSAGE_RECEIVED,
 	id: nextMessageId++,
 	message,
 	author
 })
 
 export const populateUsersList = users => ({
-	type: types.USER_LIST,
+	type: types.USERS_LIST,
 	users
 })

@@ -7,7 +7,7 @@ const AddMessage = (props) => {
 	return (
 		<section id='new-message'>
 			<input
-				onKeyPress={ e => {
+				onKeyPress={ (e)=> {
 					if(e.key === 'Enter') {
 						props.dispatch(input.value, 'Me')
 						input.value = ''

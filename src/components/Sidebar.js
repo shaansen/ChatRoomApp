@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
 const Sidebar = ({ users }) => (
   <aside id="sidebar" className="sidebar">
     <h1>Active Users</h1>
-    <hr></hr>
+    <hr />
     <ul>
       {users.map(user => (
         <li key={user.id}>{user.name}</li>
@@ -22,4 +23,8 @@ Sidebar.PropTypes = {
   ).isRequired
 };
 
-export default Sidebar;
+const mapStateToProps = state => ({
+  users: state.users
+});
+
+export default connect(mapStateToProps)(Sidebar);

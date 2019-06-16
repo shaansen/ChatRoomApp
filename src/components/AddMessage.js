@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { addMessage } from "../actions";
 
 const AddMessage = props => {
   let input;
-
+  const { addMessage } = props;
   return (
     <section id="new-message">
       <h3>Type New Message</h3>
@@ -11,7 +13,7 @@ const AddMessage = props => {
         <input
           onKeyPress={e => {
             if (e.key === "Enter") {
-              props.dispatch(input.value, "Me");
+              addMessage(input.value, "Me");
               input.value = "";
             }
           }}
@@ -30,4 +32,7 @@ AddMessage.PropTypes = {
   dispatch: PropTypes.func.isRequired
 };
 
-export default AddMessage;
+export default connect(
+  null,
+  { addMessage }
+)(AddMessage);

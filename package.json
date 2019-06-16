@@ -10,7 +10,7 @@
     "react-scripts": "1.1.0",
     "redux": "^3.7.2",
     "redux-saga": "^1.0.3",
-    "ws": "^4.0.0"
+    "ws": "^7.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
